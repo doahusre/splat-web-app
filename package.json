@@ -2,7 +2,7 @@
     "scripts": {
         "start": "concurrently \"cd client && npm start\" \"cd server && npm start\"",
         "install-deps": "cd client && npm install && cd ../server && npm install && cd ..",
-        "download-data": "curl -o server/data/gaussian_splat_data.zip https://projects.markkellogg.org/downloads/gaussian_splat_data.zip && mkdir server/data && unzip -o server/data/gaussian_splat_data.zip -d server/data && rm server/data/gaussian_splat_data.zip"
+        "download-data": "mkdir server/data && curl -o server/data/gaussian_splat_data.zip https://projects.markkellogg.org/downloads/gaussian_splat_data.zip && unzip -o server/data/gaussian_splat_data.zip -d server/data && rm server/data/gaussian_splat_data.zip"
 
     },
     "devDependencies": {
