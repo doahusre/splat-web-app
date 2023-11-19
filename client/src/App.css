@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+#viewer-container {
+  /* Adjust the width and height as needed, perhaps to fill the viewport or a specific area of the page */
+  width: 100%;
+  height: 100vh; /* This gives a full viewport height to the viewer */
+}
